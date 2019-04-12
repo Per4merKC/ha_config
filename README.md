@@ -40,7 +40,7 @@ integrating them with modern technology and convienence.
 [gitlabci-shield]: https://gitlab.com/per4merkc/ha-config/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/per4merkc/ha-config/pipelines
 [commits-shield]: https://img.shields.io/github/commit-activity/y/per4merkc/ha-config.svg
-[commits]: https://github.com/per4merkc/home-assistant-config/commits/master
+[commits]: https://github.com/per4merkc/ha-config/commits/master
 [last-commit-shield]: https://img.shields.io/github/last-commit/per4merkc/ha-config.svg
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/per4merkc
