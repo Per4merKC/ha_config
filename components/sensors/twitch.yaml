@@ -1,0 +1,12 @@
+---
+platform: twitch
+client_id: !secret twitch_client_id
+channels:
+  - adonnolux
+  - clarkio
+  - CodingItWrong
+  - digiblurDIY
+  - DrZzs
+  - frenck
+  - gavinbarron
+  - SaltyAutomation

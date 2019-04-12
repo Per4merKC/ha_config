@@ -7,6 +7,6 @@ trigger:
   event_data:
     actionName: BP_TABLET_SNOOZE
 action:
-  - service: notify.ios_je_iphone
+  - service: notify.mobile_app_je_iphone
     data:
       message: "Ok. I will remind you later..."
