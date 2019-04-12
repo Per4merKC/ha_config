@@ -23,24 +23,6 @@ stages:
         --config ./ \
         --script check_config \
         --info all
-# Generic ESPHome template
-# .esphome: &esphome
-#   stage: esphome
-#   variables:
-#     PYTHONPATH: "/usr/src/app:$PYTHONPATH"
-#   before_script:
-#     - esphomeyaml dummy.yaml version
-#     - cp -R ./.stubs/* ./config/esphomeyaml/
-#   script:
-#     - |
-#       for file in $(find \
-#         ./config/esphomeyaml \
-#         -type f \
-#         -name "*.yaml"\
-#         -not -name "secrets.yaml"
-#         ); do
-#         esphomeyaml $file config
-#       done
 
 # Preflight jobs
 shellcheck:
