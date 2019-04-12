@@ -1,0 +1,12 @@
+---
+alias: BP Remind Me Later
+hide_entity: true
+trigger:
+  platform: event
+  event_type: ios.notification_action_fired
+  event_data:
+    actionName: BP_TABLET_SNOOZE
+action:
+  - service: notify.ios_je_iphone
+    data:
+      message: "Ok. I will remind you later..."

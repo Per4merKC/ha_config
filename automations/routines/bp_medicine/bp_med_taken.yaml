@@ -1,0 +1,24 @@
+---
+alias: BP Med Taken
+hide_entity: true
+trigger:
+  platform: event
+  event_type: ios.notification_action_fired
+  event_data:
+    actionName: BP_TABLET_TAKEN
+action:
+  - service: notify.ios_je_iphone
+    data_template:
+      message: >
+        {{
+          [
+            "Good Job!",
+            "Your ❤️ thanks you!",
+            "Fist bump, bro!",
+            "Thanks for taking care of your blood pressure!",
+            "Way to go!",
+            "Thank you for taking your medicine today!"
+          ] | random
+        }}
+  - service: input_boolean.turn_on
+    entity_id: input_boolean.bp_medicine

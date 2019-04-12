@@ -1,0 +1,24 @@
+---
+alias: BP Medicine Reminder
+hide_entity: true
+initial_state: true
+trigger:
+  - platform: time_pattern
+    minutes: "/15"
+    seconds: "00"
+condition:
+  - condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.bp_medicine
+        state: "off"
+      - condition: time
+        after: "06:30:00"
+action:
+  - service: notify.ios_je_iphone
+    data:
+      title: "BP Medicine Alert!"
+      message: "Please take your BP Medicine!"
+      data:
+        push:
+          category: "bp_med"

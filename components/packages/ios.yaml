@@ -1,30 +1,30 @@
 ---
 ios:
-# push:
-#   categories:
-#     - name: BP Medicine
-#       identifier: "bp_med"
-#       actions:
-#         - identifier: "BP_TABLET_TAKEN"
-#           title: "BP Tablet Taken"
-#           activationMode: "background"
-#           authenticationRequired: false
-#           destructive: false
-#         - identifier: "BP_TABLET_SNOOZE"
-#           title: "BP Tablet Snooze"
-#           activationMode: "background"
-#           authenticationRequired: false
-#           destructive: false
-#     - name: Antibiotics
-#       identifier: "temp_med"
-#       actions:
-#         - identifier: "TEMP_MED_TAKEN"
-#           title: "Med Taken"
-#           activationMode: "background"
-#           authenticationRequired: false
-#           destructive: true
-#         - identifier: "TEMP_MED_SNOOZE"
-#           title: "Snooze Med"
-#           activationMode: "background"
-#           authenticationRequired: false
-#           destructive: false
+  push:
+    categories:
+      - name: BP Medicine
+        identifier: "bp_med"
+        actions:
+          - identifier: "BP_TABLET_TAKEN"
+            title: "BP Tablet Taken"
+            activationMode: "background"
+            authenticationRequired: false
+            destructive: false
+          - identifier: "BP_TABLET_SNOOZE"
+            title: "BP Tablet Snooze"
+            activationMode: "background"
+            authenticationRequired: false
+            destructive: false
+      - name: Antibiotics
+        identifier: "temp_med"
+        actions:
+          - identifier: "TEMP_MED_TAKEN"
+            title: "Med Taken"
+            activationMode: "background"
+            authenticationRequired: false
+            destructive: true
+          - identifier: "TEMP_MED_SNOOZE"
+            title: "Snooze Med"
+            activationMode: "background"
+            authenticationRequired: false
+            destructive: false

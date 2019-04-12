@@ -1,0 +1,5 @@
+---
+tts_control:
+  name: TTS Control
+  initial: true
+  icon: mdi:text-to-speech
