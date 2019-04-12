@@ -1,0 +1,37 @@
+---
+recorder:
+  purge_keep_days: 10
+  purge_interval: 1
+  exclude:
+    domains:
+      - updater
+      - weblink
+      - sun
+    entities:
+      - sensor.local_time
+  include:
+    entities:
+      - plant.banana
+      - plant.ficus
+      - plant.philodendron
+      - plant.pineapple
+      - sensor.banana_battery
+      - sensor.banana_conductivity
+      - sensor.banana_light_intensity
+      - sensor.banana_moisture
+      - sensor.banana_temperature
+      - sensor.ficus_battery
+      - sensor.ficus_conductivity
+      - sensor.ficus_light_intensity
+      - sensor.ficus_moisture
+      - sensor.ficus_temperature
+      - sensor.philodendron_battery
+      - sensor.philodendron_conductivity
+      - sensor.philodendron_light_intensity
+      - sensor.philodendron_moisture
+      - sensor.philodendron_temperature
+      - sensor.pineapple_battery
+      - sensor.pineapple_conductivity
+      - sensor.pineapple_light_intensity
+      - sensor.pineapple_moisture
+      - sensor.pineapple_temperature

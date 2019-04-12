@@ -1,0 +1,23 @@
+---
+logbook:
+  exclude:
+    domains:
+      - automation
+      - camera
+      - updater
+      - sun
+      - weblink
+    entities:
+      - binary_sensor.ip_webcam_motion_active
+      - binary_sensor.workday_sensor
+      - sensor.ip_webcam_light_level
+      - sensor.ip_webcam_motion
+      - sensor.local_time
+      - sensor.moon
+      - sensor.season
+      - switch.ip_webcam_focus
+      - switch.ip_webcam_front_facing_camera
+      - switch.ip_webcam_night_vision
+      - switch.ip_webcam_overlay
+      - switch.ip_webcam_torch
+      - switch.ip_webcam_video_recording

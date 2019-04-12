@@ -1,0 +1,9 @@
+---
+homeassistant:
+  name: Honey Haus
+  latitude: !secret ha_lat
+  longitude: !secret ha_lon
+  elevation: !secret ha_ele
+  unit_system: imperial
+  time_zone: America/Chicago
+  packages: !include_dir_named components/packages
