@@ -1,0 +1,5 @@
+---
+name: Home
+latitude: !secret ha_lat
+longitude: !secret ha_lon
+icon: mdi:home-assistant

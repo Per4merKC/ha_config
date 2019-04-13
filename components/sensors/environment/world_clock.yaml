@@ -1,0 +1,4 @@
+---
+platform: worldclock
+name: Local Time
+time_zone: America/Chicago

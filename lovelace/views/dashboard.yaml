@@ -1,0 +1,51 @@
+---
+id: dashboard
+title: Dashboard
+icon: mdi:home-assistant
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: light
+        entity: light.sink_light
+      - type: light
+        entity: light.desk_lights
+  - type: thermostat
+    entity: climate.thermostat
+  - type: vertical-stack
+    cards:
+      - type: picture-entity
+        entity: camera.ip_webcam
+      - type: glance
+        columns: 6
+        show_name: false
+        entities:
+          - entity: switch.ip_webcam_focus
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+          - entity: switch.ip_webcam_front_facing_camera
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+          - entity: switch.ip_webcam_night_vision
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+          - entity: switch.ip_webcam_overlay
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+          - entity: switch.ip_webcam_torch
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info
+          - entity: switch.ip_webcam_video_recording
+            tap_action:
+              action: toggle
+            hold_action:
+              action: more-info

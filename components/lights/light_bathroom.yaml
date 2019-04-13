@@ -1,0 +1,8 @@
+---
+platform: group
+name: Sink Light
+entities:
+  - light.bathroom_bulb_1
+  - light.bathroom_bulb_2
+  - light.bathroom_bulb_3
+  - light.bathroom_bulb_4

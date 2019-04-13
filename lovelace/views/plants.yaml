@@ -1,0 +1,19 @@
+---
+id: plants
+title: plants
+icon: mdi:spa
+cards:
+  - type: vertical-stack
+    cards:
+      - type: plant-status
+        entity: plant.banana
+        name: Banana
+      - type: plant-status
+        entity: plant.ficus
+        name: Ficus
+      - type: plant-status
+        entity: plant.philodendron
+        name: Philodendron
+      - type: plant-status
+        entity: plant.pineapple
+        name: Pineapple

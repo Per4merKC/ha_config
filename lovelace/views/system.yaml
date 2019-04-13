@@ -1,0 +1,65 @@
+---
+id: system
+title: System
+icon: mdi:settings
+cards:
+  - type: custom:tracker-card
+  - type: entities
+    title: Raspberry Pi
+    show_header_toggle: false
+    entities:
+      - sensor.processor_use
+      - sensor.memory_free
+      - sensor.disk_free
+      - sensor.last_boot
+      - sensor.ssl_certificate_expiry
+      - type: divider
+      - sensor.uptime
+      - sensor.version_current
+  - type: vertical-stack
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.printer_cyan
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+          - type: gauge
+            entity: sensor.printer_yellow
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.printer_magenta
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+          - type: gauge
+            entity: sensor.printer_black
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+  - type: glance
+    title: Twitch Streams
+    columns: 4
+    show_name: false
+    entities:
+      - sensor.adonnolux
+      - sensor.clarkio
+      - sensor.codingitwrong
+      - sensor.digiblurdiy
+      - sensor.drzzs
+      - sensor.frenck
+      - sensor.gavinbarron
+      - sensor.saltyautomation

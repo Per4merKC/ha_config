@@ -1,0 +1,15 @@
+---
+id: finance
+title: Finance
+icon: mdi:cash
+cards:
+  - type: horizontal-stack
+    cards:
+      - type: sensor
+        name: Bitcoin Value
+        graph: line
+        entity: sensor.exchange_rate_1_btc
+      - type: sensor
+        name: Bitcoin Trades
+        graph: line
+        entity: sensor.trade_volume

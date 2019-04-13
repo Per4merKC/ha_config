@@ -1,0 +1,11 @@
+---
+# Brother HL-4150CDN series
+#   This printer uses character codes to show a "graph" indicating
+#   the toner levels
+
+platform: command_line
+# yamllint disable-line rule:line-length
+command: curl http://192.168.1.55/etc/view_config.html | awk '/\&#x25a0;|\&#x25a1;/{i++} i == 2 {print; exit}' | awk -F'\&#x25a0;' 'NF{print NF-1}' | awk '{print $0f}'
+name: Printer Magenta
+value_template: "{{ value | multiply(10)}}"
+scan_interval: 14400

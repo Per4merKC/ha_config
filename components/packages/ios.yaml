@@ -15,16 +15,3 @@ ios:
             activationMode: "background"
             authenticationRequired: false
             destructive: false
-      - name: Antibiotics
-        identifier: "temp_med"
-        actions:
-          - identifier: "TEMP_MED_TAKEN"
-            title: "Med Taken"
-            activationMode: "background"
-            authenticationRequired: false
-            destructive: true
-          - identifier: "TEMP_MED_SNOOZE"
-            title: "Snooze Med"
-            activationMode: "background"
-            authenticationRequired: false
-            destructive: false
