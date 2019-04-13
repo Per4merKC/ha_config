@@ -1,0 +1,10 @@
+---
+id: bathroom
+title: Bathroom Room
+icon: mdi:toilet
+cards:
+  - type: entities
+    title: Bathroom Items
+    show_header_toggle: false
+    entities:
+      - light.sink_light

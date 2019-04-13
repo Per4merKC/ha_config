@@ -3,7 +3,6 @@ id: system
 title: System
 icon: mdi:settings
 cards:
-  - type: custom:tracker-card
   - type: entities
     title: Raspberry Pi
     show_header_toggle: false

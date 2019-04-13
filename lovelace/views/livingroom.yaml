@@ -6,6 +6,4 @@ badges:
   - binary_sensor.workday_sensor
 cards:
   - type: media-control
-    entity: media_player.living_room
-# - type: media-control
-#   entity: media_player.living_room_dot
+    entity: media_player.livingroom_appletv
