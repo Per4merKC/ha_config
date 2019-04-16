@@ -2,4 +2,3 @@
 discovery:
   ignore:
     - igd
-    - apple_tv
