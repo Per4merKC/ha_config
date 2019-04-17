@@ -1,0 +1,5 @@
+---
+google:
+  client_id: !secret google_calendar_oauth_client
+  client_secret: !secret google_calendar_oauth_secret
+  track_new_calendar: false
