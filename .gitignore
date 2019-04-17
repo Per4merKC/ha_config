@@ -7,6 +7,7 @@ __pycache__
 *.log
 *.pickle
 *.pyc
+*.token
 
 # Directory (contents) ignores
 .cloud
@@ -22,6 +23,7 @@ deps
 .tradfri_psk.conf
 .uuid
 core
+google_calendars.yaml
 html5_push_registrations.conf
 ip_bans.yaml
 known_devices.yaml
