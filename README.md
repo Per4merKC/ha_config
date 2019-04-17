@@ -1,4 +1,4 @@
-# :honeybee: Honey Haus
+# :honeybee::house: Honey Haus
 
 ## Home Assistant Configuration
 
