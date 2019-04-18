@@ -63,3 +63,5 @@ cards:
       - sensor.gavinbarron
       - sensor.saltyautomation
   - type: custom:tracker-card
+  - type: media-control
+    entity: media_player.computer_room_spot
