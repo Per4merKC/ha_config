@@ -1,0 +1,10 @@
+---
+alexa_media:
+  accounts:
+    - email: !secret alexa_account_email
+      password: !secret alexa_account_password
+      url: amazon.com
+      exclude_devices:
+        - "Everywhere"
+        - "John's Alexa Apps"
+        - "This Device"
