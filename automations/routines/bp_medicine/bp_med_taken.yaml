@@ -7,7 +7,7 @@ trigger:
   event_data:
     actionName: BP_TABLET_TAKEN
 action:
-  - service: notify.mobile_app_je_iphone
+  - service: notify.group_notify
     data_template:
       message: >
         {{
