@@ -7,8 +7,7 @@ cards:
     title: Banana
     image: /local/banana.jpg
     entities:
-      - entity: sensor.banana_battery
-        icon: mdi:battery
+      - sensor.banana_battery
       - entity: sensor.banana_conductivity
         icon: mdi:emoticon-poop
       - sensor.banana_light_intensity
@@ -18,8 +17,7 @@ cards:
     title: Ficus
     image: /local/ficus.jpg
     entities:
-      - entity: sensor.ficus_battery
-        icon: mdi:battery
+      - sensor.ficus_battery
       - entity: sensor.ficus_conductivity
         icon: mdi:emoticon-poop
       - sensor.ficus_light_intensity
@@ -29,8 +27,7 @@ cards:
     title: Philodendron
     image: /local/philodendron.jpg
     entities:
-      - entity: sensor.philodendron_battery
-        icon: mdi:battery
+      - sensor.philodendron_battery
       - entity: sensor.philodendron_conductivity
         icon: mdi:emoticon-poop
       - sensor.philodendron_light_intensity
@@ -40,8 +37,7 @@ cards:
     title: Pineapple
     image: /local/pineapple.jpg
     entities:
-      - entity: sensor.pineapple_battery
-        icon: mdi:battery
+      - sensor.pineapple_battery
       - entity: sensor.pineapple_conductivity
         icon: mdi:emoticon-poop
       - sensor.pineapple_light_intensity

@@ -1,0 +1,4 @@
+---
+platform: ffmpeg
+input: !secret wyze_cam_garage_url
+name: Garage Camera
