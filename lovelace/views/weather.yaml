@@ -8,3 +8,10 @@ cards:
   - type: iframe
     aspect_ratio: 90%
     url: "https://embed.windy.com/embed2.html?lat=39.041&lon=-94.607&zoom=11&level=surface&overlay=wind&menu=&message=&marker=&calendar=&pressure=&type=map&location=coordinates&detail=&detailLat=39.041&detailLon=-94.607&metricWind=mph&metricTemp=%C2%B0F&radarRange=-1"
+  - type: custom:air-visual-card
+    svg_location: "/local/icons/aqi_icons"
+    air_pollution_level: sensor.u_s_air_pollution_level
+    air_quality_index: sensor.u_s_air_quality_index
+    main_pollutant: sensor.u_s_main_pollutant
+    temp: weather.dark_sky
+    city: "Overland Park, KS"

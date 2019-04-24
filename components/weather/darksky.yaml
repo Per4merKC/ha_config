@@ -2,3 +2,4 @@
 platform: darksky
 api_key: !secret darksky_key
 mode: daily
+units: us
