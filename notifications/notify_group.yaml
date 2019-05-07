@@ -4,3 +4,4 @@ platform: group
 services:
   - service: notify_ios_per4mers_ipad
   - service: notify_mobile_app_john_iphone
+  - service: ios_je_iphone

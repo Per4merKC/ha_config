@@ -7,14 +7,14 @@ trigger:
   event_data:
     actionName: BP_TABLET_TAKEN
 action:
-  - service: notify.group_notify
+  - service: notify.ios_je_iphone
     data_template:
       message: >
         {{
           [
             "Good Job!",
             "Your ❤️ thanks you!",
-            "Fist bump, bro!",
+            "Fist bump, bro! \uE00D",
             "Thanks for taking care of your blood pressure!",
             "Way to go!",
             "Thank you for taking your medicine today!"
