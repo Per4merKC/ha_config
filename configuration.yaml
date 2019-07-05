@@ -6,4 +6,4 @@ homeassistant:
   elevation: !secret ha_ele
   unit_system: imperial
   time_zone: America/Chicago
-  packages: !include_dir_named components/packages
+  packages: !include_dir_named integrations

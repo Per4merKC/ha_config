@@ -1,4 +1,4 @@
 ---
 tradfri:
   host: !secret ikea_host
-  allow_tradfri_groups: true
+  allow_tradfri_groups: false
