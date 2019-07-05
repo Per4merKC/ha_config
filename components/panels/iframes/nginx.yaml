@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/components/panel_iframe/
 #
-esphome:
-  title: NGINX
-  icon: mdi:web
-  url: !secret panel_iframe_nginx_url
+# esphome:
+#   title: NGINX
+#   icon: mdi:web
+#   url: !secret panel_iframe_nginx_url
