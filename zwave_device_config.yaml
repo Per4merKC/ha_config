@@ -1,0 +1,4 @@
+---
+sensor.ecolink_garage_door_tilt_sensor_power_management:
+  ignored: true
+  polling_intensity: 0

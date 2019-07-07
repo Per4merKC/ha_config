@@ -3,6 +3,8 @@ id: dashboard
 title: Dashboard
 icon: mdi:home-assistant
 cards:
+  - type: light
+    entity: light.livingroom_uplights
   - type: thermostat
     entity: climate.thermostat
   - type: history-graph

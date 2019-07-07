@@ -1,0 +1,6 @@
+---
+platform: group
+name: Livingroom Uplights
+entities:
+  - light.north_uplight
+  - light.south_uplight

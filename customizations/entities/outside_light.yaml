@@ -1,0 +1,8 @@
+---
+switch.outside_light:
+  icon_template: >-
+    {% if is_state('switch.outside_light', 'on') %}
+      mdi:lightbulb
+    {% else %}
+      mdi:lightbulb-outline
+    {% endif %}
