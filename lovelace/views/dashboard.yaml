@@ -3,14 +3,15 @@ id: dashboard
 title: Dashboard
 icon: mdi:home-assistant
 cards:
-  - type: horizontal-stack
-    cards:
-      - type: light
-        entity: light.sink_light
-      - type: light
-        entity: light.desk_lights
   - type: thermostat
     entity: climate.thermostat
+  - type: history-graph
+    entities:
+      - entity: sensor.laundry_eye_temperature
+        name: Basement
+      - entity: sensor.philodendron_temperature
+        name: Outside
+
   - type: vertical-stack
     cards:
       - type: picture-entity
@@ -44,3 +45,6 @@ cards:
               action: toggle
             hold_action:
               action: more-info
+
+  - type: picture-entity
+    entity: camera.garage_camera

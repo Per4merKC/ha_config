@@ -1,0 +1,46 @@
+---
+id: computer_room
+title: Computer Room
+icon: mdi:desktop-classic
+cards:
+  - type: light
+    entity: light.desk_lights
+
+  - type: media-control
+    entity: media_player.computer_room_spot
+
+  - type: vertical-stack
+    cards:
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.printer_cyan
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+          - type: gauge
+            entity: sensor.printer_yellow
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+      - type: horizontal-stack
+        cards:
+          - type: gauge
+            entity: sensor.printer_magenta
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+          - type: gauge
+            entity: sensor.printer_black
+            unit: "%"
+            severity:
+              green: 40
+              yellow: 20
+              red: 10
+

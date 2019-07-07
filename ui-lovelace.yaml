@@ -5,6 +5,8 @@ views:
   - !include lovelace/views/dashboard.yaml
   - !include lovelace/views/weather.yaml
   - !include lovelace/views/livingroom.yaml
+  - !include lovelace/views/computer_room.yaml
+  - !include lovelace/views/laundry.yaml
   - !include lovelace/views/bathroom.yaml
   - !include lovelace/views/finance.yaml
   - !include lovelace/views/plants.yaml

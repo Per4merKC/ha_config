@@ -5,6 +5,8 @@ icon: mdi:sofa
 badges:
   - binary_sensor.workday_sensor
 cards:
+  - type: light
+    entity: light.tree_light
   - type: media-control
     entity: media_player.living_room
   - type: entities

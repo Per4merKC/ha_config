@@ -1,0 +1,20 @@
+---
+id: laundry
+title: Laundry Room
+icon: mdi:washing-machine
+badges:
+  - binary_sensor.laundry_eye_motion
+  - sensor.laundry_eye_temperature
+  - sensor.laundry_eye_lux
+cards:
+  - type: light
+    entity: light.laundry_room
+  - type: entities
+    title: Laundry Power
+    show_header_toggle: false
+    entities:
+      - switch.aeon_labs_dsc11_smart_strip_switch_5
+      - switch.aeon_labs_dsc11_smart_strip_switch
+      - switch.aeon_labs_dsc11_smart_strip_switch_2
+      - switch.aeon_labs_dsc11_smart_strip_switch_3
+      - switch.laundry_fan

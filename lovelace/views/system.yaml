@@ -15,53 +15,19 @@ cards:
       - type: divider
       - sensor.uptime
       - sensor.version_current
-  - type: vertical-stack
-    cards:
-      - type: horizontal-stack
-        cards:
-          - type: gauge
-            entity: sensor.printer_cyan
-            unit: "%"
-            severity:
-              green: 40
-              yellow: 20
-              red: 10
-          - type: gauge
-            entity: sensor.printer_yellow
-            unit: "%"
-            severity:
-              green: 40
-              yellow: 20
-              red: 10
-      - type: horizontal-stack
-        cards:
-          - type: gauge
-            entity: sensor.printer_magenta
-            unit: "%"
-            severity:
-              green: 40
-              yellow: 20
-              red: 10
-          - type: gauge
-            entity: sensor.printer_black
-            unit: "%"
-            severity:
-              green: 40
-              yellow: 20
-              red: 10
   - type: glance
     title: Twitch Streams
     columns: 4
     show_name: false
     entities:
-      - sensor.adonnolux
-      - sensor.clarkio
-      - sensor.codingitwrong
-      - sensor.digiblurdiy
-      - sensor.drzzs
-      - sensor.frenck
-      - sensor.gavinbarron
-      - sensor.saltyautomation
+      - entity: sensor.adonnolux
+      - entity: sensor.clarkio
+      - entity: sensor.codingitwrong
+      - entity: sensor.digiblurdiy
+      - entity: sensor.drzzs
+      - entity: sensor.frenck
+      - entity: sensor.gavinbarron
+      - entity: sensor.saltyautomation
   - type: custom:tracker-card
-  - type: media-control
-    entity: media_player.computer_room_spot
+  - type: entity-button
+    entity: switch.aeotec_zstick_disco_light
