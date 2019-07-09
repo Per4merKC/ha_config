@@ -1,4 +1,5 @@
 ---
+id: "00001"
 alias: BP Medicine Reset
 hide_entity: true
 trigger:
