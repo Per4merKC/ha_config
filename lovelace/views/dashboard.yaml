@@ -5,10 +5,10 @@ icon: mdi:home-assistant
 cards:
   - type: horizontal-stack
     cards:
-    - type: light
-      entity: light.livingroom_uplights
-    - type: light
-      entity: light.outside_light
+      - type: light
+        entity: light.livingroom_uplights
+      - type: light
+        entity: light.outside_light
   - type: glance
     entities:
       - entity: binary_sensor.front_door_sensor
