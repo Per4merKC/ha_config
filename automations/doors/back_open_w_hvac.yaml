@@ -1,0 +1,43 @@
+---
+id: "00009"
+alias: HVAC on and Back Door Open Long
+hide_entity: true
+trigger:
+  - entity_id: binary_sensor.back_door_sensor
+    platform: state
+    from: "off"
+    to: "on"
+    for:
+      minutes: 10
+condition:
+  condition: or
+  conditions:
+    - condition: and
+      conditions:
+        - condition: state
+          entity_id: climate.thermostat
+          state: Heat
+        - condition: template
+          value_template: >
+            "{{ states.weather.dark_sky.attributes.temperature
+            |
+            float < states.climate.thermostat.attributes.temperature
+            |
+            float }}"
+    - condition: and
+      conditions:
+        - condition: state
+          entity_id: climate.thermostat
+          state: Cool
+        - condition: template
+          value_template: >
+            "{{ states.weather.dark_sky.attributes.temperature
+            |
+            float > states.climate.thermostat.attributes.temperature
+            |
+            float }}"
+action:
+  - data:
+      message: Back door open and HVAC is running
+      title: HVAC Alert
+    service: notify.ios_je_iphone
