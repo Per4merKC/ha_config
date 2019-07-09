@@ -1,7 +1,7 @@
 ---
 id: "00008"
 alias: Back Door - Not Home
-hide_entity: true
+hide_entity: false
 trigger:
   - entity_id: binary_sensor.back_door_sensor
     platform: state

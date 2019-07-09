@@ -1,7 +1,7 @@
 ---
 id: "00007"
 alias: HVAC on and Front Door Open Long
-hide_entity: true
+hide_entity: false
 trigger:
   - entity_id: binary_sensor.front_door_sensor
     platform: state
