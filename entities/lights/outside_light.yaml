@@ -1,0 +1,4 @@
+---
+platform: switch
+name: Outside Light
+entity_id: switch.outside_light
