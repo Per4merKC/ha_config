@@ -2,8 +2,6 @@
 id: livingroom
 title: Living Room
 icon: mdi:sofa
-badges:
-  - binary_sensor.workday_sensor
 cards:
   - type: horizontal-stack
     cards:
@@ -13,8 +11,5 @@ cards:
         entity: light.livingroom_uplights
   - type: media-control
     entity: media_player.living_room
-  - type: entities
-    entities:
-      - remote.living_room
   - type: media-control
     entity: media_player.living_room_dot

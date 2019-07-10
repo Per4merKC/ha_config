@@ -2,6 +2,8 @@
 id: system
 title: System
 icon: mdi:settings
+badges:
+  - binary_sensor.workday_sensor
 cards:
   - type: entities
     title: Raspberry Pi
