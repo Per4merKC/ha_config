@@ -1,0 +1,12 @@
+---
+laundry_fan:
+  friendly_name: "Laundry Fan"
+  value_template: "{{ states('switch.laundry_fan') }}"
+  turn_on:
+    service: switch.turn_on
+    data:
+      entity_id: switch.laundry_fan
+  turn_off:
+    service: switch.turn_off
+    data:
+      entity_id: switch.laundry_fan

@@ -1,8 +1,0 @@
----
-switch.laundry_fan:
-  icon_template: >-
-    {% if is_state('switch.laundry_fan', 'on') %}
-      mdi:fan
-    {% else %}
-      mdi:fan-off
-    {% endif %}
