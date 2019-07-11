@@ -18,24 +18,16 @@ condition:
           entity_id: climate.thermostat
           state: Heat
         - condition: template
-          value_template: >
-            "{{ states.weather.dark_sky.attributes.temperature
-            |
-            float < states.climate.thermostat.attributes.temperature
-            |
-            float }}"
+          # yamllint disable-line rule:line-length
+          value_template: "{{ states.weather.dark_sky.attributes.temperature | float < states.climate.thermostat.attributes.temperature | float }}"
     - condition: and
       conditions:
         - condition: state
           entity_id: climate.thermostat
           state: Cool
         - condition: template
-          value_template: >
-            "{{ states.weather.dark_sky.attributes.temperature
-            |
-            float > states.climate.thermostat.attributes.temperature
-            |
-            float }}"
+          # yamllint disable-line rule:line-length
+          value_template: "{{ states.weather.dark_sky.attributes.temperature | float > states.climate.thermostat.attributes.temperature | float }}"
 action:
   - data:
       message: Front door open and HVAC is running

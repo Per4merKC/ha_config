@@ -1,0 +1,21 @@
+---
+id: "00010"
+alias: Garage Door - Not Home
+hide_entity: true
+trigger:
+  - entity_id: binary_sensor.garage_tilt
+    platform: state
+    from: "off"
+    to: "on"
+condition:
+  - condition: state
+    entity_id: device_tracker.rb_iphone
+    state: not_home
+  - condition: state
+    entity_id: device_tracker.je_iphone
+    state: not_home
+action:
+  - data:
+      title: Garage Door
+      message: Garage door opened when nobody is home
+    service: notify.ios_je_iphone

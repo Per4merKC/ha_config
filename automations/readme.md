@@ -1,6 +1,6 @@
 # Script Listing
 
-## Next Available Number: 00010
+## Next Available Number: 00012
 
 | Number | File | Description | Folder |
 |-------:|:-----|:------------|:-------|
@@ -13,3 +13,5 @@
 | 00007 | front_open_w_hvac | Front door was opened; HVAC is running and outside temperagure exceeds range of HVAC | doors |
 | 00008 | back_opened | Back door was opened but nobody is home | doors |
 | 00009 | back_open_w_hvac | Back door was opened; HVAC is running and outside temperagure exceeds range of HVAC | doors |
+| 00010 | garage_opened | Garage door was opened but nobody is home | doors |
+| 00011 | garage_open_w_hvac | Garage door was opened; HVAC is running and outside temperagure exceeds range of HVAC | doors |
