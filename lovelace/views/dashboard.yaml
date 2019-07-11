@@ -26,6 +26,13 @@ cards:
       - entity: sensor.philodendron_temperature
         name: Outside
 
+  - type: glance
+    entities:
+      - entity: device_tracker.je_iphone
+        name: John
+      - entity: device_tracker.rb_iphone
+        name: Robert
+
   - type: vertical-stack
     cards:
       - type: picture-entity
