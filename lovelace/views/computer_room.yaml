@@ -3,8 +3,12 @@ id: computer_room
 title: Computer Room
 icon: mdi:desktop-classic
 cards:
-  - type: light
-    entity: light.desk_lights
+  - type: horizontal-stack
+    cards:
+      - type: light
+        entity: light.desk_lights
+      - type: light
+        entity: light.den_accent
 
   - type: media-control
     entity: media_player.computer_room_spot
@@ -43,4 +47,3 @@ cards:
               green: 40
               yellow: 20
               red: 10
-
