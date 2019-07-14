@@ -1,0 +1,9 @@
+---
+binary_sensor.bathroom_motion:
+  device_class: motion
+
+sensor.bathroom_lux:
+  device_class: illuminance
+
+sensor.bathroom_humidity:
+  device_class: humidity
