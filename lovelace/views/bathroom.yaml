@@ -2,6 +2,11 @@
 id: bathroom
 title: Bathroom Room
 icon: mdi:toilet
+badges:
+  - binary_sensor.bathroom_motion
+  - sensor.bathroom_temperature
+  - sensor.bathroom_humidity
+  - sensor.bathroom_lux
 cards:
   - type: light
     entity: light.sink_light
