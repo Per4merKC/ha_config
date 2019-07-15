@@ -11,18 +11,6 @@ zwave:
   # I use this for hiding/ignoring z-wave stuff I don't use.
   # This should probably be splitted later or moved or something.
   device_config_glob:
-    # We have an dedicated alarm system and not going to use these z-wave
-    # features; ignore.
-    "*_burglar*":
-      ignored: true
-      polling_intensity: 0
-    "*_alarm_type":
-      ignored: true
-      polling_intensity: 0
-    "*_alarm_level":
-      ignored: true
-      polling_intensity: 0
-
     # Not sure why this is useful... I don't use it; ignore.
     "*_sourcenodeid":
       ignored: true
