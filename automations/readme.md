@@ -15,3 +15,4 @@
 | 00009 | back_open_w_hvac | Back door was opened; HVAC is running and outside temperagure exceeds range of HVAC | doors |
 | 00010 | garage_opened | Garage door was opened but nobody is home | doors |
 | 00011 | garage_open_w_hvac | Garage door was opened; HVAC is running and outside temperagure exceeds range of HVAC | doors |
+| 00012 | arrive_night | Arrive home at night | doors |

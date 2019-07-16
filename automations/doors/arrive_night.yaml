@@ -1,0 +1,16 @@
+---
+id: "00012"
+alias: Arrive Home at Night
+hide_entity: true
+trigger:
+  platform: zone
+  entity_id: device_tracker.rb_iphone, device_tracker.je_iphone
+  zone: zone.home
+  event: enter
+condition:
+  condition: state
+  entity_id: sun.sun
+  state: below_horizon
+action:
+  service: light.turn_on
+  entity_id: light.outside_light
