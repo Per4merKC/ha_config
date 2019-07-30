@@ -2,6 +2,18 @@
 sensor.ecolink_garage_door_tilt_sensor_power_management:
   ignored: true
   polling_intensity: 0
-sensor.aeon_labs_dsb09104_home_energy_meter_unknown_2:
-  ignored: false
+# sensor.aeon_labs_dsb09104_home_energy_meter_unknown_2:
+#   ignored: false
+#   polling_intensity: 0
+binary_sensor.bathroom_binary:
+  ignored: true
+  polling_intensity: 0
+sensor.zooz_zse40_4_in_1_sensor_burglar:
+  ignored: true
+  polling_intensity: 0
+sensor.zooz_zse40_4_in_1_sensor_appliance:
+  ignored: true
+  polling_intensity: 0
+sensor.zooz_zse40_4_in_1_sensor_alarm_type:
+  ignored: true
   polling_intensity: 0

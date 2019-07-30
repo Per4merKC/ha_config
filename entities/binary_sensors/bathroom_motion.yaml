@@ -1,0 +1,6 @@
+---
+platform: threshold
+entity_id: sensor.bathroom_motion_sensor
+upper: 254
+name: Bathroom Motion
+device_class: motion
