@@ -9,7 +9,7 @@ cards:
         entity: light.livingroom_uplights
       - type: light
         entity: light.outside_light
-  
+
   - type: glance
     entities:
       - entity: binary_sensor.front_door_sensor
@@ -18,10 +18,10 @@ cards:
         name: Back
       - entity: binary_sensor.garage_tilt
         name: Garage
-  
+
   - type: thermostat
     entity: climate.thermostat
-  
+
   - type: history-graph
     entities:
       - entity: sensor.bathroom_temperature
