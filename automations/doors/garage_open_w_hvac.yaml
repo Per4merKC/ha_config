@@ -15,14 +15,14 @@ condition:
     - condition: and
       conditions:
         - condition: template
-          value_template: "{{ states.climate.thermostat.attributes.operation_mode == 'heat'}}"
+          value_template: "{{ states.climate.thermostat.state == 'heat'}}"
         - condition: template
           # yamllint disable-line rule:line-length
           value_template: "{{ states.weather.dark_sky.attributes.temperature | float < states.climate.thermostat.attributes.temperature | float }}"
     - condition: and
       conditions:
         - condition: template
-          value_template: "{{ states.climate.thermostat.attributes.operation_mode == 'cool'}}"
+          value_template: "{{ states.climate.thermostat.state == 'cool'}}"
         - condition: template
           # yamllint disable-line rule:line-length
           value_template: "{{ states.weather.dark_sky.attributes.temperature | float > states.climate.thermostat.attributes.temperature | float }}"
