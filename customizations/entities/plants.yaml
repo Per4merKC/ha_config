@@ -1,0 +1,20 @@
+---
+plant.banana:
+  friendly_name: Banana
+  entity_picture: /local/banana.jpg
+  unit_of_measurement: °F
+
+plant.ficus:
+  friendly_name: Ficus
+  entity_picture: /local/ficus.jpg
+  unit_of_measurement: °F
+
+plant.philodendron:
+  friendly_name: Philodendron
+  entity_picture: /local/philodendron.jpg
+  unit_of_measurement: °F
+
+plant.pineapple:
+  friendly_name: Pineapple
+  entity_picture: /local/pineapple.jpg
+  unit_of_measurement: °F

@@ -6,43 +6,11 @@ icon: mdi:spa
 cards:
   - type: vertical-stack
     cards:
-      - type: picture-glance
-        title: Banana
-        image: /local/banana.jpg
-        entities:
-          - sensor.banana_battery
-          - entity: sensor.banana_conductivity
-            icon: mdi:emoticon-poop
-          - sensor.banana_light_intensity
-          - sensor.banana_moisture
-          - sensor.banana_temperature
-      - type: picture-glance
-        title: Ficus
-        image: /local/ficus.jpg
-        entities:
-          - sensor.ficus_battery
-          - entity: sensor.ficus_conductivity
-            icon: mdi:emoticon-poop
-          - sensor.ficus_light_intensity
-          - sensor.ficus_moisture
-          - sensor.ficus_temperature
-      - type: picture-glance
-        title: Philodendron
-        image: /local/philodendron.jpg
-        entities:
-          - sensor.philodendron_battery
-          - entity: sensor.philodendron_conductivity
-            icon: mdi:emoticon-poop
-          - sensor.philodendron_light_intensity
-          - sensor.philodendron_moisture
-          - sensor.philodendron_temperature
-      - type: picture-glance
-        title: Pineapple
-        image: /local/pineapple.jpg
-        entities:
-          - sensor.pineapple_battery
-          - entity: sensor.pineapple_conductivity
-            icon: mdi:emoticon-poop
-          - sensor.pineapple_light_intensity
-          - sensor.pineapple_moisture
-          - sensor.pineapple_temperature
+      - type: plant-status
+        entity: plant.banana
+      - type: plant-status
+        entity: plant.ficus
+      - type: plant-status
+        entity: plant.philodendron
+      - type: plant-status
+        entity: plant.pineapple
