@@ -7,3 +7,8 @@ homeassistant:
   unit_system: imperial
   time_zone: America/Chicago
   packages: !include_dir_named integrations
+
+hacs:
+  token: !secret hacs_token
+  python_script: true
+  theme: true
