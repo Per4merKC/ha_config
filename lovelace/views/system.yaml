@@ -90,21 +90,38 @@ cards:
                   return `<ha-icon
                     icon="mdi:server"
                     style="width: 12px; height: 12px; color: deepskyblue;">
-                    </ha-icon><span> CPU: <span style="color: var(--text-color-sensor);">${states['sensor.processor_use'].state}%</span></span>`
+                    </ha-icon>
+                    <span>CPU:
+                    <span style="color: var(--text-color-sensor);">
+                    ${states['sensor.processor_use'].state}%
+                    </span>
+                    </span>`
                 ]]]
               ram: >
                 [[[
                   return `<ha-icon
                     icon="mdi:memory"
                     style="width: 12px; height: 12px; color: deepskyblue;">
-                    </ha-icon><span> RAM: <span style="color: var(--text-color-sensor);">${states['sensor.memory_use_percent'].state}%</span></span>`
+                    </ha-icon>
+                    <span>
+                    RAM:
+                    <span style="color: var(--text-color-sensor);">
+                    ${states['sensor.memory_use_percent'].state}%
+                    </span>
+                    </span>`
                 ]]]
               sd: >
                 [[[
                   return `<ha-icon
                     icon="mdi:harddisk"
                     style="width: 12px; height: 12px; color: deepskyblue;">
-                    </ha-icon><span> DSK: <span style="color: var(--text-color-sensor);">${states['sensor.disk_use_percent'].state}%</span></span>`
+                    </ha-icon>
+                    <span>
+                    DSK:
+                    <span style="color: var(--text-color-sensor);">
+                    ${states['sensor.disk_use_percent'].state}%
+                    </span>
+                    </span>`
                 ]]]
 
       - type: entities
