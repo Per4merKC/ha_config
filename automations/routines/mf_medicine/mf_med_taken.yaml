@@ -1,0 +1,25 @@
+---
+id: "00016"
+alias: Metformin Taken
+hide_entity: true
+trigger:
+  platform: event
+  event_type: ios.notification_action_fired
+  event_data:
+    actionName: MF_TABLET_TAKEN
+action:
+  - service: notify.ios_rb_iphone
+    data_template:
+      message: >
+        {{
+          [
+            "Good Job!",
+            "Your ❤️ thanks you!",
+            "Fist bump, bro! \uE00D",
+            "Thanks for taking care of yourself!",
+            "Way to go!",
+            "Thank you for taking your medicine today!"
+          ] | random
+        }}
+  - service: input_boolean.turn_on
+    entity_id: input_boolean.mf_medicine

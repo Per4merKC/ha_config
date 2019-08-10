@@ -1,0 +1,25 @@
+---
+id: "00014"
+alias: Metformin AM Reminder
+hide_entity: true
+initial_state: true
+trigger:
+  - platform: time_pattern
+    minutes: "/15"
+    seconds: "00"
+condition:
+  - condition: and
+    conditions:
+      - condition: state
+        entity_id: input_boolean.mf_medicine
+        state: "off"
+      - condition: time
+        after: "08:00:00"
+action:
+  - service: notify.ios_rb_iphone
+    data:
+      title: "Metformin Alert!"
+      message: "Please take your Metformin!"
+      data:
+        push:
+          category: "mf_med"

@@ -1,0 +1,10 @@
+---
+id: "00013"
+alias: Metformin Reset AM
+hide_entity: true
+trigger:
+  - platform: time
+    at: "01:00:00"
+action:
+  - service: input_boolean.turn_off
+    entity_id: input_boolean.mf_medicine

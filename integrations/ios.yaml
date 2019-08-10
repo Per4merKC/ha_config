@@ -15,3 +15,16 @@ ios:
             activationMode: "background"
             authenticationRequired: false
             destructive: false
+      - name: Metformin Medicine
+        identifier: "mf_med"
+        actions:
+          - identifier: "MF_TABLET_TAKEN"
+            title: "Metformin Taken"
+            activationMode: "background"
+            authenticationRequired: false
+            destructive: false
+          - identifier: "MF_TABLET_SNOOZE"
+            title: "Metformin Snooze"
+            activationMode: "background"
+            authenticationRequired: false
+            destructive: false
