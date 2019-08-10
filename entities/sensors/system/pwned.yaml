@@ -1,7 +1,8 @@
 ---
 # Have I Been Pwned
-platform: haveibeenpwned
-email:
-  - !secret pwned_email_1
-  - !secret pwned_email_2
-  - !secret pwned_email_3
+# platform: haveibeenpwned
+# email:
+#   - !secret pwned_email_1
+#   - !secret pwned_email_2
+#   - !secret pwned_email_3
+# Disabled until API Key is secured
