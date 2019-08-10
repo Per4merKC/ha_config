@@ -23,6 +23,7 @@ deps
 .pip_progress
 .tradfri_psk.conf
 .uuid
+*.tile.conf
 core
 google_calendars.yaml
 html5_push_registrations.conf
