@@ -141,7 +141,10 @@ cards:
     show_name: false
     entities:
       - entity: sensor.adonnolux
+      - entity: sensor.clarkio
+      - entity: sensor.codingitwrong
       - entity: sensor.digiblurdiy
       - entity: sensor.drzzs
       - entity: sensor.frenck
+      - entity: sensor.gavinbarron
       - entity: sensor.saltyautomation
