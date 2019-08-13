@@ -19,7 +19,7 @@ action:
   - service: notify.ios_rb_iphone
     data:
       title: "Metformin Alert!"
-      message: "Please take your Metformin!"
+      message: "Please take your morning Metformin!"
       data:
         push:
           category: "mf_med"
