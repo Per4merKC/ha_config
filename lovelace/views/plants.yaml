@@ -1,16 +1,58 @@
 ---
 id: plants
 title: plants
-panel: true
+panel: false
 icon: mdi:spa
 cards:
-  - type: vertical-stack
-    cards:
-      - type: plant-status
-        entity: plant.banana
-      - type: plant-status
-        entity: plant.ficus
-      - type: plant-status
-        entity: plant.philodendron
-      - type: plant-status
-        entity: plant.pineapple
+  - type: custom:miflora-card
+    title: 'Banana'
+    image: banana.jpg
+    min_moisture: 15
+    max_moisture: 60
+    min_conductivity: 350
+    min_temperature: 12
+    entities:
+    - moisture:sensor.banana_moisture
+    - intensity:sensor.banana_light_intensity
+    - temperature:sensor.banana_temperature
+    - conductivity:sensor.banana_conductivity
+    - battery:sensor.banana_battery
+  - type: custom:miflora-card
+    title: 'Ficus'
+    image: ficus.jpg
+    min_moisture: 15
+    max_moisture: 60
+    min_conductivity: 350
+    min_temperature: 12
+    entities:
+    - moisture:sensor.ficus_moisture
+    - intensity:sensor.ficus_light_intensity
+    - temperature:sensor.ficus_temperature
+    - conductivity:sensor.ficus_conductivity
+    - battery:sensor.ficus_battery
+  - type: custom:miflora-card
+    title: 'Philodendron'
+    image: philodendron.jpg
+    min_moisture: 15
+    max_moisture: 60
+    min_conductivity: 350
+    min_temperature: 12
+    entities:
+    - moisture:sensor.philodendron_moisture
+    - intensity:sensor.philodendron_light_intensity
+    - temperature:sensor.philodendron_temperature
+    - conductivity:sensor.philodendron_conductivity
+    - battery:sensor.philodendron_battery
+  - type: custom:miflora-card
+    title: 'Pineapple'
+    image: pineapple.jpg
+    min_moisture: 15
+    max_moisture: 60
+    min_conductivity: 350
+    min_temperature: 12
+    entities:
+    - moisture:sensor.pineapple_moisture
+    - intensity:sensor.pineapple_light_intensity
+    - temperature:sensor.pineapple_temperature
+    - conductivity:sensor.pineapple_conductivity
+    - battery:sensor.pineapple_battery
