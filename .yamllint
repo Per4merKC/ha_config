@@ -1,9 +1,7 @@
 ---
 ignore: |
-  config/custom_components/
-  config/ip_bans.yaml
-  config/esphomeyaml/*/
-  config/notebooks/
+  custom_components/
+  ip_bans.yaml
 rules:
   braces:
     level: error
