@@ -1,6 +1,6 @@
 ---
 platform: threshold
 entity_id: sensor.laundry_flood
-lower: 254
+upper: 254
 name: Laundry Flood
 device_class: moisture
