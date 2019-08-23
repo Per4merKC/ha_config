@@ -1,0 +1,4 @@
+---
+platform: gitlab_ci
+gitlab_id: !secret gitlab_project_id
+token: !secret gitlab_access_token

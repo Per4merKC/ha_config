@@ -4,6 +4,7 @@ title: System
 icon: mdi:settings
 badges:
   - binary_sensor.workday_sensor
+  - sensor.gitlab_ci_status
   - sensor.aeon_labs_dsb09104_home_energy_meter_energy
   - sensor.aeon_labs_dsb09104_home_energy_meter_energy_2
   - sensor.aeon_labs_dsb09104_home_energy_meter_energy_3
@@ -126,7 +127,6 @@ cards:
                     </span>
                     </span>`
                 ]]]
-
       - type: entities
         title: Raspberry Pi
         show_header_toggle: false
@@ -171,3 +171,6 @@ cards:
     name: Power
     graph: line
     entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_4
+  - type: custom:github-card
+    entities:
+      - sensor.ha_config
