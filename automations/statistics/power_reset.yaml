@@ -1,0 +1,11 @@
+---
+id: "00019"
+alias: Reset Power Settings
+hide_entity: true
+trigger:
+  platform: time
+  at: "00:00:00"
+action:
+  - service: zwave.reset_node_meters
+    data: 
+      node_id: 23

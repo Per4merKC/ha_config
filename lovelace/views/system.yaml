@@ -4,6 +4,9 @@ title: System
 icon: mdi:settings
 badges:
   - binary_sensor.workday_sensor
+  - sensor.aeon_labs_dsb09104_home_energy_meter_energy
+  - sensor.aeon_labs_dsb09104_home_energy_meter_energy_2
+  - sensor.aeon_labs_dsb09104_home_energy_meter_energy_3
 cards:
   - type: vertical-stack
     cards:
@@ -152,31 +155,19 @@ cards:
     cards:
       - type: sensor
         name: Energy
-        icon: mdi:power
         graph: line
-        entity: sensor.aeon_labs_dsb09104_home_energy_meter_energy
+        entity: sensor.aeon_labs_dsb09104_home_energy_meter_power
       - type: horizontal-stack
         cards:
           - type: sensor
             name: Leg I
             graph: line
-            entity: sensor.aeon_labs_dsb09104_home_energy_meter_energy_2
+            entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_2
           - type: sensor
             name: Leg II
             graph: line
-            entity: sensor.aeon_labs_dsb09104_home_energy_meter_energy_3
-  - type: history-graph
-    title: Power
-    entities:
-      - entity: sensor.aeon_labs_dsb09104_home_energy_meter_power
-        name: Power 1
-      - entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_2
-        name: Power 2
-      - entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_3
-        name: Power 3
-      - entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_4
-        name: Power 4
-      - entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_5
-        name: Power 5
-      - entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_6
-        name: Power 6
+            entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_3
+  - type: sensor
+    name: Power
+    graph: line
+    entity: sensor.aeon_labs_dsb09104_home_energy_meter_power_4

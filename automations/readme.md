@@ -1,6 +1,6 @@
 # Script Listing
 
-## Next Available Number: 00019
+## Next Available Number: 00020
 
 | Number | File | Description | Folder |
 |-------:|:-----|:------------|:-------|
@@ -22,3 +22,4 @@
 | 00016 | mf_med_taken | User said they took the metformin; set boolean_input.mf_medicine to on | routintes/mf_medicine |
 | 00017 | mf_med_reset_pm | Reset the bp medicine flag for the input_boolean.mf_medicine to off | routines/mf_medicine |
 | 00018 | mf_med_remind_pm | Send the PM reminder to take Metformin | routines/mf_medicine |
+| 00019 | power_reset | Reset the total power meters on the zwave power meter | statistics |
