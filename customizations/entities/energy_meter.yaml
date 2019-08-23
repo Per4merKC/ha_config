@@ -1,6 +1,0 @@
-# ---
-# sensor.energy_meter_power:
-#   device_class: power
-
-# sensor.energy_meter_previous:
-#   device_class: power

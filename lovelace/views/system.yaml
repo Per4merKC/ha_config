@@ -146,10 +146,10 @@ cards:
       - entity: sensor.adonnolux
       - entity: sensor.clarkio
       - entity: sensor.codingitwrong
+      - entity: sensor.csharpfritz
       - entity: sensor.digiblurdiy
       - entity: sensor.drzzs
       - entity: sensor.frenck
-      - entity: sensor.gavinbarron
       - entity: sensor.saltyautomation
   - type: vertical-stack
     cards:
