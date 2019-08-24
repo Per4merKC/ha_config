@@ -4,9 +4,9 @@ title: Bathroom Room
 icon: mdi:toilet
 badges:
   - binary_sensor.bathroom_motion
-  - sensor.bathroom_temperature
-  - sensor.bathroom_humidity
-  - sensor.bathroom_lux
+  - sensor.zooz_zse40_4_in_1_sensor_temperature
+  - sensor.zooz_zse40_4_in_1_sensor_relative_humidity
+  - sensor.zooz_zse40_4_in_1_sensor_luminance
 cards:
   - type: light
     entity: light.sink_light

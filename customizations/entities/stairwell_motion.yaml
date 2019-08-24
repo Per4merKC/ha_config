@@ -1,3 +1,7 @@
 ---
-binary_sensor.stairwell_motion:
+zwave.kaipule_technology_co_ltd_unknown_type_0002_id_0002:
+  friendly_name: Zwave Stairwell Motion
+
+binary_sensor.kaipule_technology_co_ltd_unknown_type_0002_id_0002_sensor:
+  friendly_name: Stairwell Motion
   device_class: motion

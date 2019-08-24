@@ -6,7 +6,7 @@ cards:
   - type: horizontal-stack
     cards:
       - type: light
-        entity: light.tree_light
+        entity: light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level
       - type: light
         entity: light.livingroom_uplights
   - type: media-control

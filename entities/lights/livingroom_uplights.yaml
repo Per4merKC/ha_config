@@ -2,5 +2,5 @@
 platform: group
 name: Livingroom Uplights
 entities:
-  - light.north_uplight
-  - light.south_uplight
+  - light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2
+  - light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_3

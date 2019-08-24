@@ -1,3 +1,7 @@
 ---
-binary_sensor.front_door_sensor:
+zwave.aeon_labs_zw089_recessed_door_sensor_gen5_sensor:
+  friendly_name: Zwave Front Door
+
+binary_sensor.aeon_labs_zw089_recessed_door_sensor_gen5_sensor:
+  friendly_name: Front Door
   device_class: door

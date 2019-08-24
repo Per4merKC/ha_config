@@ -1,0 +1,7 @@
+---
+zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_2:
+  friendly_name: Zwave Livingroom North Can Light
+
+light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level_2:
+  friendly_name: North Can Light
+  hidden: true

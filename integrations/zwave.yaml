@@ -14,13 +14,3 @@ zwave:
     # Not sure why this is useful... I don't use it; ignore.
     "*_sourcenodeid":
       ignored: true
-
-    # Don't load the zooz items that don't do anything
-    "sensor.zooz_zse40_4_in_1_sensor_*":
-      ignored: true
-    "binary_sensor.bathroom_binary":
-      ignored: true
-
-    # Fibaro switches have an exporting sensor... I don't use it; ignore.
-    "sensor.*_exporting":
-      ignored: true

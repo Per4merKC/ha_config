@@ -1,0 +1,12 @@
+---
+sensor.kaipule_technology_co_ltd_unknown_type_0002_id_0002_alarm_level:
+  polling_intensity: 0
+  ignored: true
+
+sensor.kaipule_technology_co_ltd_unknown_type_0002_id_0002_alarm_type:
+  polling_intensity: 0
+  ignored: true
+
+sensor.kaipule_technology_co_ltd_unknown_type_0002_id_0002_burglar:
+  polling_intensity: 0
+  ignored: true

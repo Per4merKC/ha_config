@@ -12,11 +12,11 @@ cards:
 
   - type: glance
     entities:
-      - entity: binary_sensor.front_door_sensor
+      - entity: binary_sensor.aeon_labs_zw089_recessed_door_sensor_gen5_sensor
         name: Front
-      - entity: binary_sensor.back_door_sensor
+      - entity: binary_sensor.aeon_labs_zw089_recessed_door_sensor_gen5_sensor_2
         name: Back
-      - entity: binary_sensor.garage_tilt
+      - entity: binary_sensor.ecolink_garage_door_tilt_sensor_sensor
         name: Garage
 
   - type: thermostat
@@ -24,7 +24,7 @@ cards:
 
   - type: history-graph
     entities:
-      - entity: sensor.bathroom_temperature
+      - entity: sensor.zooz_zse40_4_in_1_sensor_temperature
         name: Bathroom
       - entity: sensor.darksky_temperature
         name: Outside

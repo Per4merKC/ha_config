@@ -1,0 +1,6 @@
+---
+zwave.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level_2:
+  friendly_name: Zwave Laundry Light
+
+light.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level_2:
+  friendly_name: Laundry Light

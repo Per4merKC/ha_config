@@ -1,12 +1,12 @@
 ---
 laundry_fan:
   friendly_name: "Laundry Fan"
-  value_template: "{{ states('switch.laundry_fan') }}"
+  value_template: "{{ states('switch.aeon_labs_dsc11_smart_strip_switch_5') }}"
   turn_on:
     service: switch.turn_on
     data:
-      entity_id: switch.laundry_fan
+      entity_id: switch.aeon_labs_dsc11_smart_strip_switch_5
   turn_off:
     service: switch.turn_off
     data:
-      entity_id: switch.laundry_fan
+      entity_id: switch.aeon_labs_dsc11_smart_strip_switch_5

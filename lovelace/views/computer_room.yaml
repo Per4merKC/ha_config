@@ -8,7 +8,7 @@ cards:
       - type: light
         entity: light.desk_lights
       - type: light
-        entity: light.den_accent
+        entity: light.zipato_bulb_2_level
 
   - type: media-control
     entity: media_player.computer_room_spot

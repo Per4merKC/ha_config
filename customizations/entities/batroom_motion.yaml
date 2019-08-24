@@ -2,8 +2,13 @@
 binary_sensor.bathroom_motion:
   device_class: motion
 
-sensor.bathroom_lux:
+sensor.zooz_zse40_4_in_1_sensor_luminance:
+  friendly_name: Bathroom Luminance
   device_class: illuminance
 
-sensor.bathroom_humidity:
+sensor.zooz_zse40_4_in_1_sensor_relative_humidity:
+  friendly_name: Bathroom Humidity
   device_class: humidity
+
+sensor.zooz_zse40_4_in_1_sensor_temperature:
+  friendly_name: Bathroom Temperature

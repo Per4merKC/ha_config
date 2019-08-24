@@ -1,0 +1,16 @@
+---
+binary_sensor.zooz_zse40_4_in_1_sensor_sensor:
+  polling_intensity: 0
+  ignored: true
+
+sensor.zooz_zse40_4_in_1_sensor_alarm_type:
+  polling_intensity: 0
+  ignored: true
+
+sensor.zooz_zse40_4_in_1_sensor_appliance:
+  polling_intensity: 0
+  ignored: true
+
+sensor.zooz_zse40_4_in_1_sensor_burglar:
+  polling_intensity: 0
+  ignored: true

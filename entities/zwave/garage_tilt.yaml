@@ -1,0 +1,20 @@
+---
+sensor.ecolink_garage_door_tilt_sensor_power_management:
+  polling_intensity: 0
+  ignored: true
+
+sensor.ecolink_garage_door_tilt_sensor_burglar:
+  polling_intensity: 0
+  ignored: true
+
+sensor.ecolink_garage_door_tilt_sensor_alarm_type:
+  polling_intensity: 0
+  ignored: true
+
+sensor.ecolink_garage_door_tilt_sensor_alarm_level:
+  polling_intensity: 0
+  ignored: true
+
+sensor.ecolink_garage_door_tilt_sensor_access_control:
+  polling_intensity: 0
+  ignored: true

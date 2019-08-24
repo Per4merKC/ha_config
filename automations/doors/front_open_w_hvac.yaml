@@ -3,7 +3,7 @@ id: "00007"
 alias: HVAC on and Front Door Open Long
 hide_entity: true
 trigger:
-  - entity_id: binary_sensor.front_door_sensor
+  - entity_id: binary_sensor.aeon_labs_zw089_recessed_door_sensor_gen5_sensor
     platform: state
     from: "off"
     to: "on"

@@ -1,0 +1,8 @@
+---
+sensor.everspring_st812_flood_detector_alarm_level:
+  ignored: true
+  polling_intensity: 0
+
+sensor.everspring_st812_flood_detector_alarm_type:
+  ignored: true
+  polling_intensity: 0

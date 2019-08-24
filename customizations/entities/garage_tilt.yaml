@@ -1,3 +1,4 @@
 ---
-binary_sensor.garage_tilt:
+binary_sensor.ecolink_garage_door_tilt_sensor_sensor:
+  friendly_name: Garage Door
   device_class: garage_door

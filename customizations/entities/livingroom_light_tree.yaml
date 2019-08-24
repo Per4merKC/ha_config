@@ -1,0 +1,6 @@
+---
+zwave.leviton_dzpd3_1lw_plug_in_dimming_lamp_module:
+  friendly_name: Zwave Livingroom Tree Light
+
+light.leviton_dzpd3_1lw_plug_in_dimming_lamp_module_level:
+  friendly_name: Tree Light
