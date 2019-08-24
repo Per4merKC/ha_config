@@ -19,3 +19,53 @@ cards:
     main_pollutant: sensor.u_s_main_pollutant
     temp: weather.dark_sky
     city: "Overland Park, KS"
+  - type: custom:vertical-stack-in-card
+    cards:
+      - type: markdown
+        content: "## Allergy Index Today"
+      - type: gauge
+        entity: sensor.allergy_index_today
+        title: Today
+        min: 0
+        max: 12
+        unit_of_measurement: " "
+        severity:
+          green: 0.0
+          yellow: 4.8
+          red: 9.7
+      - type: custom:entity-attributes-card
+        filter:
+          include:
+            - key: sensor.allergy_index_today.rating
+              name: Rating
+            - key: sensor.allergy_index_today.allergen_genus_1
+              name: Allergen Genus
+            - key: sensor.allergy_index_today.allergen_name_1
+              name: Allergen Name
+            - key: sensor.allergy_index_today.allergen_type_1
+              name: Allergen Type
+  - type: custom:vertical-stack-in-card
+    cards:
+      - type: markdown
+        content: "## Alergy Index Tomorrow"
+      - type: gauge
+        entity: sensor.allergy_index_tomorrow
+        title: Tomorrow
+        min: 0
+        max: 12
+        unit_of_measurement: " "
+        severity:
+          green: 0.0
+          yellow: 4.8
+          red: 9.7
+      - type: custom:entity-attributes-card
+        filter:
+          include:
+            - key: sensor.allergy_index_tomorrow.rating
+              name: Rating
+            - key: sensor.allergy_index_tomorrow.allergen_genus_1
+              name: Allergen Genus
+            - key: sensor.allergy_index_tomorrow.allergen_name_1
+              name: Allergen Name
+            - key: sensor.allergy_index_tomorrow.allergen_type_1
+              name: Allergen Type
