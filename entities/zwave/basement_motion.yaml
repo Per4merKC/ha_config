@@ -1,0 +1,24 @@
+---
+sensor.fibaro_system_fgms001_zw5_motion_sensor_acceleration_x_axis:
+  polling_intensity: 0
+  ignored: true
+
+sensor.fibaro_system_fgms001_zw5_motion_sensor_acceleration_y_axis:
+  polling_intensity: 0
+  ignored: true
+
+sensor.fibaro_system_fgms001_zw5_motion_sensor_acceleration_z_axis:
+  polling_intensity: 0
+  ignored: true
+
+sensor.fibaro_system_fgms001_zw5_motion_sensor_general:
+  polling_intensity: 0
+  ignored: true
+
+sensor.fibaro_system_fgms001_zw5_motion_sensor_alarm_level:
+  polling_intensity: 0
+  ignored: true
+
+sensor.fibaro_system_fgms001_zw5_motion_sensor_alarm_type:
+  polling_intensity: 0
+  ignored: true

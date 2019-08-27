@@ -3,10 +3,11 @@ id: laundry
 title: Laundry Room
 icon: mdi:washing-machine
 badges:
+  - binary_sensor.fibaro_system_fgms001_zw5_motion_sensor_sensor
+  - sensor.fibaro_system_fgms001_zw5_motion_sensor_temperature
+  - sensor.fibaro_system_fgms001_zw5_motion_sensor_luminance
   - binary_sensor.laundry_flood
-  - binary_sensor.laundry_eye_motion
-  - sensor.laundry_eye_temperature
-  - sensor.laundry_eye_lux
+  - sensor.fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity
 cards:
   - type: light
     entity: light.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level_2
