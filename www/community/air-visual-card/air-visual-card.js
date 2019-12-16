@@ -23,9 +23,8 @@ class AirVisualCard extends HTMLElement {
 
 
     setConfig(config) {
-      if (!config.city) {
-        config.city = '';
-      }
+
+      
 
       if (!config.icons) {
         config.icons = "https://cdn.jsdelivr.net/gh/dnguyen800/air-visual-card@0.0.4/dist";
@@ -35,9 +34,6 @@ class AirVisualCard extends HTMLElement {
       if (root.lastChild) root.removeChild(root.lastChild);
   
       const cardConfig = Object.assign({}, config);
-      if (!cardConfig.title) {
-        cardConfig.title = `Air Quality Index`;
-      } 
     
       const card = document.createElement('ha-card');
       const content = document.createElement('div');
@@ -64,10 +60,11 @@ class AirVisualCard extends HTMLElement {
           grid-column-end: 3;
           text-align: left;
           text-indent: 0.3em;
-          color: #414141;
           font-size: 1.8em;
           font-weight: 300;
-          padding: .2em .2em;      
+          padding: .2em .2em;    
+          background-color: var(--background-color); 
+          text-color: var(--text-color);  
         }
 
         .temp {
@@ -77,7 +74,8 @@ class AirVisualCard extends HTMLElement {
           text-align: right;
           font-size: 1.7em;
           font-weight: 300;
-          color: #414141;
+          background-color: var(--background-color); 
+          text-color: var(--text-color);  
           padding: .2em .2em;       
         }
   
@@ -140,9 +138,6 @@ class AirVisualCard extends HTMLElement {
       </div>
       `;
       
-      if (config.show_title) {
-        card.header = cardConfig.title;
-      }
       card.appendChild(content);
       card.appendChild(style);
       root.appendChild(card);
@@ -155,16 +150,20 @@ class AirVisualCard extends HTMLElement {
       const root = this.shadowRoot;
       const card = root.lastChild;
       this.myhass = hass;
-
-      const iconDirectory = config.icons
+      
+      const hideTitle = config.hide_title ? 1 : 0;
+      const iconDirectory = config.icons ? config.icons : "https://cdn.jsdelivr.net/gh/dnguyen800/air-visual-card@0.0.4/dist";
+      const country = config.country || 'US';
       const city = config.city || '';
+      const tempSensor = config.temp || '';
       // value is used as a string instead of integer in order for 
       const aqiSensor = { name: 'aqiSensor', config: config.air_quality_index || '', value: 0 };
       const aplSensor = { name: 'aplSensor', config: config.air_pollution_level || '', value: 0 };
       const mainPollutantSensor = { name: 'mainPollutantSensor', config: config.main_pollutant || '', value: 0 };
       const airvisualSensorList = [aqiSensor, aplSensor, mainPollutantSensor];
+      const unitOfMeasurement = hass.states[aqiSensor.config].attributes['unit_of_measurement'] || 'AQI';
+      const pollutantUnit = hass.states[mainPollutantSensor.config].attributes['pollutant'] || 'µg/m³';
 
-      const tempSensor = config.temp || '';
       const faceIcon = {
         '1': 'mdi:emoticon-excited',
         '2': 'mdi:emoticon-happy',
@@ -205,7 +204,7 @@ class AirVisualCard extends HTMLElement {
         'hail': 'mdi:weather-hail',
         'lightning': 'mdi:weather-lightning',
         'lightning-rainy': 'mdi:weather-lightning-rainy',
-        'partlycloudy': 'mdi:weather-partlycloudy',
+        'partlycloudy': 'mdi:weather-partly-cloudy',
         'pouring': 'mdi:weather-pouring',
         'rainy': 'mdi:weather-rainy',
         'snowy': 'mdi:weather-snowy',
@@ -239,17 +238,17 @@ class AirVisualCard extends HTMLElement {
  
       let getAQI = function () {
         switch (true) {
-          case (aqiSensor.value < 50):
+          case (aqiSensor.value <= 50):
             return '1'; // return string '1' to pull appropriate AQI icon filename ('ic-face-1.svg') in HTML
-          case (aqiSensor.value < 100):
+          case (aqiSensor.value <= 100):
             return '2';
-          case (aqiSensor.value < 150):
+          case (aqiSensor.value <= 150):
             return '3';
-          case (aqiSensor.value < 200):
+          case (aqiSensor.value <= 200):
             return '4';
-          case (aqiSensor.value < 300):
+          case (aqiSensor.value <= 300):
             return '5';
-          case (aqiSensor.value < 9999):
+          case (aqiSensor.value <= 9999):
             return '6';
           default:
             return '1';
@@ -257,33 +256,35 @@ class AirVisualCard extends HTMLElement {
       };
 
 
-      let faceHTML = `<img src="${iconDirectory}/ic-face-${getAQI()}.svg"></img>`;     
-
-
-
-
-      let card_content = ''     
-      card_content += `
+      let faceHTML = ``;     
+ 
+      let card_content = `
         <div class="grid-container" style="background-color: ${AQIbgColor[getAQI()]};">
-          <div class="city" style="background-color: #FFFFFF;">${city}</div>
-          <div class="temp"><ha-icon icon="${weatherIcons[currentCondition]}"></ha-icon>   ${tempValue}</div>
-          <div class="face" id="face" style="background-color: ${AQIfaceColor[getAQI()]};">`
-      card_content += faceHTML;
+        `;
+      if (!hideTitle) {
+        card_content += `
+        <div class="city">${city}</div>
+        <div class="temp"><ha-icon icon="${weatherIcons[currentCondition]}"></ha-icon>   ${tempValue}</div>
+        `;
+      }
+
       card_content += `
+          <div class="face" id="face" style="background-color: ${AQIfaceColor[getAQI()]};">
+            <img src="${iconDirectory}/ic-face-${getAQI()}.svg"></img>
           </div>  
           <div class="aqiSensor" id="aqiSensor" style="background-color: ${AQIbgColor[getAQI()]}; color: ${AQIfontColor[getAQI()]}">
             <div style="font-size:3em;">${aqiSensor.value}</div>
-            US AQI
+            ${country} ${unitOfMeasurement}
           </div>
           <div class="aplSensor" id="aplSensor" style="background-color: ${AQIbgColor[getAQI()]}; color: ${AQIfontColor[getAQI()]}">
             ${aplSensor.value}
             <br>
             <div class="mainPollutantSensor" id="mainPollutantSensor">
-              ${mainPollutantSensor.value}
+              ${mainPollutantSensor.value} | ${pollutantUnit}
             </div>
           </div>
         </div> 
-      `
+      `;
 
 
 

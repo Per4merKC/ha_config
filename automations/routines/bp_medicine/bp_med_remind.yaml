@@ -16,7 +16,7 @@ condition:
       - condition: time
         after: "06:30:00"
 action:
-  - service: notify.ios_je_iphone
+  - service: notify.mobile_app_john_iphone
     data:
       title: "BP Medicine Alert!"
       message: "Please take your BP Medicine!"

@@ -1,7 +1,7 @@
 ---
 id: weather
 title: Weather
-icon: mdi:weather-partlycloudy
+icon: mdi:weather-partly-cloudy
 cards:
   - type: weather-forecast
     name: Weekly Weather
