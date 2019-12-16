@@ -13,4 +13,3 @@ hacs:
   python_script: true
   theme: true
   appdaemon: true
-  
