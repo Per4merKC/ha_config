@@ -3,11 +3,10 @@ id: laundry
 title: Laundry Room
 icon: mdi:washing-machine
 badges:
-  - binary_sensor.fibaro_system_fgms001_zw5_motion_sensor_sensor
-  - sensor.fibaro_system_fgms001_zw5_motion_sensor_temperature
-  - sensor.fibaro_system_fgms001_zw5_motion_sensor_luminance
+  - binary_sensor.fibaro_system_fgms001_zw5_motion_sensor_sensor_2
   - binary_sensor.laundry_flood
-  - sensor.fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity
+  - sensor.fibaro_system_fgms001_zw5_motion_sensor_temperature_2
+  - sensor.fibaro_system_fgms001_zw5_motion_sensor_luminance_2
 cards:
   - type: light
     entity: light.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level_2
@@ -15,9 +14,7 @@ cards:
     title: Laundry Power
     show_header_toggle: false
     entities:
-      - switch.aeon_labs_dsc11_smart_strip_switch_5
       - switch.aeon_labs_dsc11_smart_strip_switch
       - switch.aeon_labs_dsc11_smart_strip_switch_2
       - switch.aeon_labs_dsc11_smart_strip_switch_3
-      - switch.aeon_labs_dsc11_smart_strip_switch_4
       - fan.laundry_fan

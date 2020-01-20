@@ -19,6 +19,13 @@ cards:
       - entity: binary_sensor.ecolink_garage_door_tilt_sensor_sensor
         name: Garage
 
+  - type: glance
+    entities:
+      - entity: binary_sensor.hallway_smoke_status
+        name: Hallway
+      - entity: binary_sensor.livingroom_smoke_status
+        name: Back
+
   - type: thermostat
     entity: climate.thermostat
 

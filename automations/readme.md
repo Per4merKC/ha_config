@@ -23,3 +23,5 @@
 | 00017 | mf_med_reset_pm | Reset the bp medicine flag for the input_boolean.mf_medicine to off | routines/mf_medicine |
 | 00018 | mf_med_remind_pm | Send the PM reminder to take Metformin | routines/mf_medicine |
 | 00019 | power_reset | Reset the total power meters on the zwave power meter | statistics |
+| 00020 | stairwell_motion | Motion in stairwell, activate lights | motion |
+| 00021 | laundry_motion | Motion in laundry room, activate lights | motion |

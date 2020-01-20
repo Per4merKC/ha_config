@@ -8,7 +8,7 @@ trigger:
   event_data:
     actionName: MF_TABLET_TAKEN
 action:
-  - service: notify.mobile_app_robert_iphone
+  - service: notify.mobile_app_iphone
     data_template:
       message: >
         {{

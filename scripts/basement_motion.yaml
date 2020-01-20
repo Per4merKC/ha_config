@@ -1,0 +1,23 @@
+---
+basement_motion_helper:
+  sequence:
+    - delay:
+        minutes: 3
+    - service: light.turn_off
+      data:
+        entity_id:
+          - light.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level
+          - light.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level_2
+
+basement_motion_timer:
+  sequence:
+    - service: script.turn_off
+      data:
+        entity_id: script.basement_motion_helper
+    - service: light.turn_on
+      entity_id:
+        - light.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level
+        - light.linear_nortek_security_control_llc_lb60z_1_dimmable_led_light_bulb_level_2
+    - service: script.turn_on
+      data:
+        entity_id: script.basement_motion_helper

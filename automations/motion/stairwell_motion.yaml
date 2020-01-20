@@ -1,0 +1,12 @@
+---
+id: "00020"
+alias: Stairwell Motion
+hide_entity: true
+trigger:
+  - entity_id: binary_sensor.kaipule_technology_co_ltd_unknown_type_0002_id_0002_sensor
+    platform: state
+    from: "off"
+    to: "on"
+action:
+  - alias: Turn on basement stairwell lights
+    service: script.basement_motion_timer

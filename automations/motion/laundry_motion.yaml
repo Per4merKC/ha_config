@@ -1,0 +1,12 @@
+---
+id: "00021"
+alias: Laundry Motion
+hide_entity: true
+trigger:
+  - entity_id: binary_sensor.fibaro_system_fgms001_zw5_motion_sensor_sensor_2
+    platform: state
+    from: "off"
+    to: "on"
+action:
+  - alias: Turn on basement stairwell lights
+    service: script.basement_motion_timer

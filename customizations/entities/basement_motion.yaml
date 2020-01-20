@@ -1,16 +1,16 @@
 ---
-sensor.fibaro_system_fgms001_zw5_motion_sensor_luminance:
+sensor.fibaro_system_fgms001_zw5_motion_sensor_luminance_2:
   friendly_name: Basement Luminance
   device_class: illuminance
 
-sensor.fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity:
+sensor.fibaro_system_fgms001_zw5_motion_sensor_seismic_intensity_2:
   friendly_name: Basement Seismometer
   icon: mdi:earth
   unit_of_measurement: "mercalli"
 
-binary_sensor.fibaro_system_fgms001_zw5_motion_sensor_sensor:
+binary_sensor.fibaro_system_fgms001_zw5_motion_sensor_sensor_2:
   friendly_name: Basement Motion
   device_class: motion
 
-sensor.fibaro_system_fgms001_zw5_motion_sensor_temperature:
+sensor.fibaro_system_fgms001_zw5_motion_sensor_temperature_2:
   friendly_name: Basement Temperature

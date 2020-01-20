@@ -8,6 +8,6 @@ trigger:
   event_data:
     actionName: MF_TABLET_SNOOZE
 action:
-  - service: notify.mobile_app_robert_iphone
+  - service: notify.mobile_app_iphone
     data:
       message: "Ok. I will remind you later..."

@@ -26,3 +26,30 @@ sensors:
         mdi:smoke-detector
       {% endif %}
     # yamllint enable rule:line-length
+
+  hallway_smoke_status:
+    friendly_name: Hallway Smoke Detector
+    device_class: smoke
+    # yamllint disable rule:line-length
+    value_template: >-
+      {% if is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '255') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '1') %}
+        smoke
+      {% elif is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '255') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '2') %}
+         co2
+      {% elif is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '0') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '12') %}
+         test
+      {% elif is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '255') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '13') %}
+          idle
+      {% endif %}
+    icon_template: >-
+      {% if is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '255') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '1') %}
+        mdi:fire
+      {% elif is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '255') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '2') %}
+        mdi:cloud-outline
+      {% elif is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '0') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '12') %}
+        mdi:alert-octagram
+      {% elif is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_level_2', '255') and is_state('sensor.first_alert_brk_brands_inc_zcombo_smoke_and_carbon_monoxide_detector_alarm_type_2', '13') %}
+        mdi:smoke-detector
+      {% endif %}
+    # yamllint enable rule:line-length
+

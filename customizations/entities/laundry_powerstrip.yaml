@@ -1,3 +1,16 @@
 ---
+switch.aeon_labs_dsc11_smart_strip_switch:
+  friendly_name: Laundry Power 1
+
+switch.aeon_labs_dsc11_smart_strip_switch_2:
+  friendly_name: Laundry Power 2
+
+switch.aeon_labs_dsc11_smart_strip_switch_3:
+  friendly_name: Laundry Power 3
+
+switch.aeon_labs_dsc11_smart_strip_switch_4:
+  hidden: true
+
 switch.aeon_labs_dsc11_smart_strip_switch_5:
   hidden: true
+  friendly_name: Laundry Full Strip
