@@ -18,14 +18,16 @@ cards:
       - type: horizontal-stack
         cards:
           - type: gauge
-            entity: sensor.printer_cyan
+            entity: sensor.hl_4150cdn_cyan_toner_remaining
+            name: Cyan Toner
             unit: "%"
             severity:
               green: 40
               yellow: 20
               red: 10
           - type: gauge
-            entity: sensor.printer_yellow
+            entity: sensor.hl_4150cdn_yellow_toner_remaining
+            name: Yellow Toner
             unit: "%"
             severity:
               green: 40
@@ -34,14 +36,16 @@ cards:
       - type: horizontal-stack
         cards:
           - type: gauge
-            entity: sensor.printer_magenta
+            entity: sensor.hl_4150cdn_magenta_toner_remaining
+            name: Magenta Toner
             unit: "%"
             severity:
               green: 40
               yellow: 20
               red: 10
           - type: gauge
-            entity: sensor.printer_black
+            entity: sensor.hl_4150cdn_black_toner_remaining
+            name: Black toner
             unit: "%"
             severity:
               green: 40

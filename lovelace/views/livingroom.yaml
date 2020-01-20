@@ -2,6 +2,8 @@
 id: livingroom
 title: Living Room
 icon: mdi:sofa
+badges:
+  - binary_sensor.livingroom_smoke_status
 cards:
   - type: horizontal-stack
     cards:

@@ -30,4 +30,4 @@ action:
   - data:
       message: Garage door open and HVAC is running
       title: HVAC Alert
-    service: notify.ios_je_iphone
+    service: notify.mobile_app_john_iphone

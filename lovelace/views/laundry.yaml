@@ -19,4 +19,5 @@ cards:
       - switch.aeon_labs_dsc11_smart_strip_switch
       - switch.aeon_labs_dsc11_smart_strip_switch_2
       - switch.aeon_labs_dsc11_smart_strip_switch_3
+      - switch.aeon_labs_dsc11_smart_strip_switch_4
       - fan.laundry_fan

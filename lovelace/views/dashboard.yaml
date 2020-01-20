@@ -33,7 +33,7 @@ cards:
     entities:
       - entity: device_tracker.john_iphone
         name: John
-      - entity: device_tracker.rb_iphone
+      - entity: device_tracker.robert_iphone
         name: Robert
 
   - type: vertical-stack
@@ -69,6 +69,5 @@ cards:
               action: toggle
             hold_action:
               action: more-info
-
   - type: picture-entity
     entity: camera.garage_camera

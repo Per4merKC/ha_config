@@ -16,7 +16,7 @@ condition:
       - condition: time
         after: "18:30:00"
 action:
-  - service: notify.ios_rb_iphone
+  - service: notify.mobile_app_robert_iphone
     data:
       title: "Metformin Alert!"
       message: "Please take your evening Metformin!"

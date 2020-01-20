@@ -9,13 +9,13 @@ trigger:
     to: "on"
 condition:
   - condition: state
-    entity_id: device_tracker.rb_iphone
+    entity_id: device_tracker.robert_iphone
     state: not_home
   - condition: state
-    entity_id: device_tracker.je_iphone
+    entity_id: device_tracker.john_iphone
     state: not_home
 action:
   - data:
       title: Garage Door
       message: Garage door opened when nobody is home
-    service: notify.ios_je_iphone
+    service: notify.mobile_app_john_iphone
