@@ -19,12 +19,15 @@ cards:
       - entity: binary_sensor.ecolink_garage_door_tilt_sensor_sensor
         name: Garage
 
-  - type: glance
+  - type: custom:banner-card
+    heading: "\U0001F525 Alarms"
+    background: "#B0C2ED"
+    row_size: 2
     entities:
       - entity: binary_sensor.hallway_smoke_status
         name: Hallway
       - entity: binary_sensor.livingroom_smoke_status
-        name: Back
+        name: Living Room
 
   - type: thermostat
     entity: climate.thermostat
