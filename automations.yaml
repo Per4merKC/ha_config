@@ -1,0 +1,31 @@
+---
+- id: '1580700067533'
+  alias: John In Bed
+  description: ''
+  trigger:
+  - platform: webhook
+    webhook_id: John Bed
+  condition: []
+  action:
+  - entity_id: automation.withings_bedtime
+    service: automation.trigger
+- id: '1580700222187'
+  alias: Bed Status
+  description: ''
+  trigger:
+  - platform: webhook
+    webhook_id: Bed-Status-John
+  condition: []
+  action:
+  - entity_id: automation.withings_bedtime
+    service: automation.trigger
+- id: '1580700223052'
+  alias: Bed Status
+  description: ''
+  trigger:
+  - platform: webhook
+    webhook_id: Bed-Status-John
+  condition: []
+  action:
+  - entity_id: automation.withings_bedtime
+    service: automation.trigger
