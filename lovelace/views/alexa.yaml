@@ -1,0 +1,71 @@
+---
+id: alexa
+title: Alexa
+icon: mdi:amazon-alexa
+panel: false
+cards:
+  - type: vertical-stack
+    title: Living Room
+    cards:
+      - type: media-control
+        entity: media_player.living_room_dot
+      - type: entities
+        entities:
+          - switch.living_room_dot_do_not_disturb_switch
+          - sensor.living_room_dot_next_alarm
+          - sensor.living_room_dot_next_reminder
+          - sensor.living_room_dot_next_timer
+          - switch.living_room_dot_repeat_switch
+          - switch.living_room_dot_shuffle_switch
+  - type: vertical-stack
+    title: Computer Room
+    cards:
+      - type: media-control
+        entity: media_player.computer_room_spot
+      - type: entities
+        entities:
+          - switch.computer_room_spot_do_not_disturb_switch
+          - sensor.computer_room_spot_next_alarm
+          - sensor.computer_room_spot_next_reminder
+          - sensor.computer_room_spot_next_timer
+          - switch.computer_room_spot_repeat_switch
+          - switch.computer_room_spot_shuffle_switch
+  - type: vertical-stack
+    title: Kitchen
+    cards:
+      - type: media-control
+        entity: media_player.basement_flex
+      - type: entities
+        entities:
+          - switch.john_s_2nd_echo_flex_do_not_disturb_switch
+          - sensor.john_s_2nd_echo_flex_next_alarm
+          - sensor.john_s_2nd_echo_flex_next_reminder
+          - sensor.john_s_2nd_echo_flex_next_timer
+          - switch.john_s_2nd_echo_flex_repeat_switch
+          - switch.john_s_2nd_echo_flex_shuffle_switch
+  - type: vertical-stack
+    title: Bathroom
+    cards:
+      - type: media-control
+        entity: media_player.john_s_2nd_echo_flex
+      - type: entities
+        entities:
+          - switch.john_s_3rd_echo_flex_do_not_disturb_switch
+          - sensor.john_s_3rd_echo_flex_next_alarm
+          - sensor.john_s_3rd_echo_flex_next_reminder
+          - sensor.john_s_3rd_echo_flex_next_timer
+          - switch.john_s_3rd_echo_flex_repeat_switch
+          - switch.john_s_3rd_echo_flex_shuffle_switch
+  - type: vertical-stack
+    title: Basement
+    cards:
+      - type: media-control
+        entity: media_player.john_s_3rd_echo_flex
+      - type: entities
+        entities:
+            - switch.john_s_3rd_echo_flex_do_not_disturb_switch
+            - sensor.john_s_3rd_echo_flex_next_alarm
+            - sensor.john_s_3rd_echo_flex_next_reminder
+            - sensor.john_s_3rd_echo_flex_next_timer
+            - switch.john_s_3rd_echo_flex_repeat_switch
+            - switch.john_s_3rd_echo_flex_shuffle_switch

@@ -10,4 +10,5 @@ views:
   - !include lovelace/views/bathroom.yaml
   - !include lovelace/views/finance.yaml
   - !include lovelace/views/plants.yaml
+  - !include lovelace/views/alexa.yaml
   - !include lovelace/views/system.yaml
