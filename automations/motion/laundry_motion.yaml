@@ -1,7 +1,6 @@
 ---
 id: "00021"
 alias: Laundry Motion
-hide_entity: true
 trigger:
   - entity_id: binary_sensor.fibaro_system_fgms001_zw5_motion_sensor_sensor_2
     platform: state

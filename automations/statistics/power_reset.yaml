@@ -1,7 +1,6 @@
 ---
 id: "00019"
 alias: Reset Power Settings
-hide_entity: true
 trigger:
   platform: time
   at: "00:00:00"

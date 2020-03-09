@@ -1,7 +1,6 @@
 ---
 id: "00015"
 alias: Metformin Remind Me Later
-hide_entity: true
 trigger:
   platform: event
   event_type: ios.notification_action_fired

@@ -1,7 +1,6 @@
 ---
 id: "00017"
 alias: Metformin Reset PM
-hide_entity: true
 trigger:
   - platform: time
     at: "18:25:00"

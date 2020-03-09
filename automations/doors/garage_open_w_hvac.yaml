@@ -1,7 +1,6 @@
 ---
 id: "00011"
 alias: HVAC on and Garage Door Open Long
-hide_entity: true
 trigger:
   - entity_id: binary_sensor.ecolink_garage_door_tilt_sensor_sensor
     platform: state

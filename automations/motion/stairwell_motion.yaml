@@ -1,7 +1,6 @@
 ---
 id: "00020"
 alias: Stairwell Motion
-hide_entity: true
 trigger:
   - entity_id: binary_sensor.kaipule_technology_co_ltd_unknown_type_0002_id_0002_sensor
     platform: state

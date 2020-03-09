@@ -1,7 +1,6 @@
 ---
 id: "00012"
 alias: Arrive Home at Night
-hide_entity: true
 trigger:
   platform: zone
   entity_id: device_tracker.john_iphone, device_tracker.robert_iphone

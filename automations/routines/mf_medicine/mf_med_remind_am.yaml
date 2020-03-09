@@ -1,7 +1,6 @@
 ---
 id: "00014"
 alias: Metformin AM Reminder
-hide_entity: true
 initial_state: true
 trigger:
   - platform: time_pattern

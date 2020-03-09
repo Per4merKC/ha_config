@@ -1,7 +1,6 @@
 ---
 id: "00008"
 alias: Back Door - Not Home
-hide_entity: true
 trigger:
   - entity_id: binary_sensor.aeon_labs_zw089_recessed_door_sensor_gen5_sensor_2
     platform: state
