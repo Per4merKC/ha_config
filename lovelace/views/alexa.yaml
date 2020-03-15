@@ -63,9 +63,9 @@ cards:
         entity: media_player.basement_flex
       - type: entities
         entities:
-            - switch.basement_flex_do_not_disturb_switch
-            - sensor.basement_flex_next_alarm
-            - sensor.basement_flex_next_reminder
-            - sensor.basement_flex_next_timer
-            - switch.basement_flex_repeat_switch
-            - switch.basement_flex_shuffle_switch
+          - switch.basement_flex_do_not_disturb_switch
+          - sensor.basement_flex_next_alarm
+          - sensor.basement_flex_next_reminder
+          - sensor.basement_flex_next_timer
+          - switch.basement_flex_repeat_switch
+          - switch.basement_flex_shuffle_switch
