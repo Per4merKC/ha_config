@@ -34,7 +34,7 @@ cards:
     title: Kitchen
     cards:
       - type: media-control
-        entity: media_player.basement_flex
+        entity: media_player.john_s_2nd_echo_flex
       - type: entities
         entities:
           - switch.john_s_2nd_echo_flex_do_not_disturb_switch
@@ -47,7 +47,7 @@ cards:
     title: Bathroom
     cards:
       - type: media-control
-        entity: media_player.john_s_2nd_echo_flex
+        entity: media_player.john_s_3rd_echo_flex
       - type: entities
         entities:
           - switch.john_s_3rd_echo_flex_do_not_disturb_switch
@@ -60,12 +60,12 @@ cards:
     title: Basement
     cards:
       - type: media-control
-        entity: media_player.john_s_3rd_echo_flex
+        entity: media_player.basement_flex
       - type: entities
         entities:
-            - switch.john_s_3rd_echo_flex_do_not_disturb_switch
-            - sensor.john_s_3rd_echo_flex_next_alarm
-            - sensor.john_s_3rd_echo_flex_next_reminder
-            - sensor.john_s_3rd_echo_flex_next_timer
-            - switch.john_s_3rd_echo_flex_repeat_switch
-            - switch.john_s_3rd_echo_flex_shuffle_switch
+            - switch.basement_flex_do_not_disturb_switch
+            - sensor.basement_flex_next_alarm
+            - sensor.basement_flex_next_reminder
+            - sensor.basement_flex_next_timer
+            - switch.basement_flex_repeat_switch
+            - switch.basement_flex_shuffle_switch
