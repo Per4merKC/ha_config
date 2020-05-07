@@ -10,3 +10,16 @@ badges:
 cards:
   - type: light
     entity: light.sink_light
+  - type: vertical-stack
+    title: Bathroom
+    cards:
+      - type: media-control
+        entity: media_player.john_s_3rd_echo_flex
+      - type: entities
+        entities:
+          - switch.john_s_3rd_echo_flex_do_not_disturb_switch
+          - sensor.john_s_3rd_echo_flex_next_alarm
+          - sensor.john_s_3rd_echo_flex_next_reminder
+          - sensor.john_s_3rd_echo_flex_next_timer
+          - switch.john_s_3rd_echo_flex_repeat_switch
+          - switch.john_s_3rd_echo_flex_shuffle_switch

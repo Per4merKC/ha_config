@@ -18,3 +18,16 @@ cards:
       - switch.aeon_labs_dsc11_smart_strip_switch_2
       - switch.aeon_labs_dsc11_smart_strip_switch_3
       - fan.laundry_fan
+  - type: vertical-stack
+    title: Basement
+    cards:
+      - type: media-control
+        entity: media_player.basement_flex
+      - type: entities
+        entities:
+          - switch.basement_flex_do_not_disturb_switch
+          - sensor.basement_flex_next_alarm
+          - sensor.basement_flex_next_reminder
+          - sensor.basement_flex_next_timer
+          - switch.basement_flex_repeat_switch
+          - switch.basement_flex_shuffle_switch
